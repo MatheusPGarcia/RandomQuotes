@@ -32,10 +32,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-YR-3CD">
-                                <rect key="frame" x="139" y="617" width="97" height="30"/>
+                                <rect key="frame" x="139" y="567" width="97" height="30"/>
                                 <state key="normal" title="Update Quote"/>
                                 <connections>
                                     <action selector="updateQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsh-IW-Ze6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-hV-3cF">
+                                <rect key="frame" x="111" y="617" width="153" height="30"/>
+                                <state key="normal" title="More about Developer"/>
+                                <connections>
+                                    <action selector="moreAbout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUe-ae-zFN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,14 +53,17 @@
                             <constraint firstItem="yTC-ah-NpK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="20M-4v-xTE"/>
                             <constraint firstItem="yTC-ah-NpK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7L5-9c-a43"/>
                             <constraint firstItem="ozc-be-rzd" firstAttribute="leading" secondItem="yTC-ah-NpK" secondAttribute="leading" id="As1-Ml-LAx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eVK-hV-3cF" secondAttribute="bottom" constant="20" id="DH8-JY-BnX"/>
                             <constraint firstItem="Bzr-YR-3CD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HI4-4C-o7T"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yTC-ah-NpK" secondAttribute="trailing" constant="20" id="J4k-Bo-pg1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bzr-YR-3CD" secondAttribute="bottom" constant="20" id="hnb-nm-2HZ"/>
+                            <constraint firstItem="eVK-hV-3cF" firstAttribute="top" secondItem="Bzr-YR-3CD" secondAttribute="bottom" constant="20" id="dSW-8d-UXG"/>
+                            <constraint firstItem="eVK-hV-3cF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePb-5T-vxu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="ozc-be-rzd" id="hZM-TB-dLY"/>
+                        <outlet property="moreAboutButton" destination="eVK-hV-3cF" id="KCe-dm-BAr"/>
                         <outlet property="quoteLabel" destination="yTC-ah-NpK" id="dK3-e9-MSy"/>
                     </connections>
                 </viewController>
