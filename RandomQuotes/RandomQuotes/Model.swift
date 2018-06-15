@@ -11,33 +11,31 @@ import Alamofire
 
 class Model: NSObject {
 
+    var quote: Quote
+    weak var view: QuoteViewController?
+
+    override init() {
+        let quoteText = "If you don't have internet, you can't get new quotes"
+        let author = "From this app developer"
+
+        quote = Quote(quote: quoteText, author: author)
+    }
+
     func updateQuote() {
+        let service = QuoteService()
+        service.updateQuote(model: self)
+    }
 
-        let url = "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1"
-        let xMashapeKey = "VmE3XJQFNwmshGI3us3JoFBm4oqBp1RGpwVjsn9L9FhPiH934C"
+    func quoteHasChanged() {
 
-        let header = ["X-Mashape-Key": xMashapeKey,
-                      "Content-Type": "application/x-www-form-urlencoded",
-                      "Accept": "application/json"]
+        if let view = view {
+            view.updateLabels()
+        }
+        print("It's time:\n\(quote.text)\n\(quote.author)")
+        return
+    }
 
-        Alamofire.request(url, headers: header).response { response in
-
-            guard let data = response.data else {
-                return
-            }
-
-            do {
-                let decoder = JSONDecoder()
-                let quoteArray = try decoder.decode([Quote].self, from: data)
-                let quote = quoteArray.first
-
-                if let quote = quote {
-                    // Here you have the quote
-                }
-
-            } catch let jsonErr {
-                print("Failed to decode: ", jsonErr)
-            }
-        } .resume()
+    func setView(view: QuoteViewController) {
+        self.view = view
     }
 }
