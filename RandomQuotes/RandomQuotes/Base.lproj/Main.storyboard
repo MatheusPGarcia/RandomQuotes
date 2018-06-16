@@ -35,14 +35,14 @@
                                 <rect key="frame" x="139" y="567" width="97" height="30"/>
                                 <state key="normal" title="Update Quote"/>
                                 <connections>
-                                    <action selector="updateQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsh-IW-Ze6"/>
+                                    <action selector="updateQuoteWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsh-IW-Ze6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-hV-3cF">
                                 <rect key="frame" x="111" y="617" width="153" height="30"/>
                                 <state key="normal" title="More about Developer"/>
                                 <connections>
-                                    <action selector="moreAbout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUe-ae-zFN"/>
+                                    <action selector="moreAboutWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUe-ae-zFN"/>
                                 </connections>
                             </button>
                         </subviews>

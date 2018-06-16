@@ -53,7 +53,7 @@ class QuoteViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
-    @IBAction func updateQuote(_ sender: UIButton) {
+    @IBAction func updateQuoteWasPressed(_ sender: UIButton) {
 
         if !(quoteModel.checkInternetConnection()) {
             noConnection()
@@ -63,7 +63,7 @@ class QuoteViewController: UIViewController {
         }
     }
 
-    @IBAction func moreAbout(_ sender: Any) {
+    @IBAction func moreAboutWasPressed(_ sender: Any) {
 
         if !(quoteModel.checkInternetConnection()) {
             noConnection()
