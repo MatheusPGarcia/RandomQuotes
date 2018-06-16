@@ -22,7 +22,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;It was a pleasure to develop this app&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTC-ah-NpK">
                                 <rect key="frame" x="20" y="188" width="335" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozc-be-rzd">
@@ -46,16 +46,17 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ozc-be-rzd" firstAttribute="top" secondItem="yTC-ah-NpK" secondAttribute="bottom" constant="15" id="188-0l-ZNT"/>
-                            <constraint firstItem="yTC-ah-NpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1xW-eI-Naz"/>
                             <constraint firstItem="yTC-ah-NpK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="20M-4v-xTE"/>
                             <constraint firstItem="yTC-ah-NpK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7L5-9c-a43"/>
                             <constraint firstItem="ozc-be-rzd" firstAttribute="leading" secondItem="yTC-ah-NpK" secondAttribute="leading" id="As1-Ml-LAx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yTC-ah-NpK" secondAttribute="trailing" constant="20" id="D3K-M4-ZHB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eVK-hV-3cF" secondAttribute="bottom" constant="20" id="DH8-JY-BnX"/>
                             <constraint firstItem="Bzr-YR-3CD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HI4-4C-o7T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yTC-ah-NpK" secondAttribute="trailing" constant="20" id="J4k-Bo-pg1"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ozc-be-rzd" secondAttribute="trailing" constant="20" symbolic="YES" id="dHL-aP-J1U"/>
+                            <constraint firstItem="yTC-ah-NpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dKw-Yz-3sK"/>
                             <constraint firstItem="eVK-hV-3cF" firstAttribute="top" secondItem="Bzr-YR-3CD" secondAttribute="bottom" constant="20" id="dSW-8d-UXG"/>
                             <constraint firstItem="eVK-hV-3cF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePb-5T-vxu"/>
                         </constraints>

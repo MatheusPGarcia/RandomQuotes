@@ -16,6 +16,7 @@
 		AEF3344120D43225008A081D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344020D43225008A081D /* Model.swift */; };
 		AEF3344320D453C4008A081D /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344220D453C4008A081D /* QuoteService.swift */; };
 		AEF3344520D45EF3008A081D /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344420D45EF3008A081D /* QuoteViewController.swift */; };
+		AEF3344920D4953B008A081D /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344820D4953B008A081D /* InternetConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AEF3344020D43225008A081D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AEF3344220D453C4008A081D /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
 		AEF3344420D45EF3008A081D /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		AEF3344820D4953B008A081D /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
 		EC8F00E3225BA386E79F6B5F /* Pods_RandomQuotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomQuotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,9 +88,10 @@
 			children = (
 				AE59E38A20D40DB40041E002 /* AppDelegate.swift */,
 				AEF3343E20D43199008A081D /* Quote.swift */,
+				AEF3344420D45EF3008A081D /* QuoteViewController.swift */,
 				AEF3344020D43225008A081D /* Model.swift */,
 				AEF3344220D453C4008A081D /* QuoteService.swift */,
-				AEF3344420D45EF3008A081D /* QuoteViewController.swift */,
+				AEF3344820D4953B008A081D /* InternetConnection.swift */,
 				AE59E38E20D40DB40041E002 /* Main.storyboard */,
 				AE59E39120D40DB70041E002 /* Assets.xcassets */,
 				AE59E39320D40DB70041E002 /* LaunchScreen.storyboard */,
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF3344920D4953B008A081D /* InternetConnection.swift in Sources */,
 				AEF3343F20D43199008A081D /* Quote.swift in Sources */,
 				AEF3344320D453C4008A081D /* QuoteService.swift in Sources */,
 				AEF3344520D45EF3008A081D /* QuoteViewController.swift in Sources */,

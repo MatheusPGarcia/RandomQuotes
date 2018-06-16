@@ -19,6 +19,10 @@ class QuoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if !(quoteModel.checkInternetConnection()) {
+            noConnection()
+        }
+
         quoteModel.setView(view: self)
     }
 
@@ -36,11 +40,35 @@ class QuoteViewController: UIViewController {
         self.view.layoutIfNeeded()
     }
 
+    func noConnection() {
+        moreAboutButton.isEnabled = false
+
+        let action = UIAlertAction(title: "Ok",
+                                   style: .default,
+                                   handler: nil)
+        let alert = UIAlertController(title: "Alert",
+                                      message: "No Internet Connection",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
+
     @IBAction func updateQuote(_ sender: UIButton) {
-        quoteModel.updateQuote()
+
+        if !(quoteModel.checkInternetConnection()) {
+            noConnection()
+        } else {
+            moreAboutButton.isEnabled = true
+            quoteModel.updateQuote()
+        }
     }
 
     @IBAction func moreAbout(_ sender: Any) {
+
+        if !(quoteModel.checkInternetConnection()) {
+            noConnection()
+            return
+        }
 
         var author = quoteModel.quote.author
         author = author.replacingOccurrences(of: " ", with: "+")

@@ -22,8 +22,20 @@ class Model: NSObject {
     }
 
     func updateQuote() {
+
         let service = QuoteService()
         service.updateQuote(model: self)
+    }
+
+    func checkInternetConnection() -> Bool {
+
+        let internetStatus = InternetConnenction.checkCconnection()
+
+        if !internetStatus {
+            return false
+        }
+
+        return true
     }
 
     func quoteHasChanged() {
@@ -31,7 +43,6 @@ class Model: NSObject {
         if let view = view {
             view.updateLabels()
         }
-        print("It's time:\n\(quote.text)\n\(quote.author)")
         return
     }
 
