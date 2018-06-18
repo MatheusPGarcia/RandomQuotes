@@ -15,6 +15,7 @@ class QuoteViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var moreAboutButton: UIButton!
+    @IBOutlet weak var updateQuoteLabel: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,11 @@ class QuoteViewController: UIViewController {
         if !(quoteModel.checkInternetConnection()) {
             noConnection()
         }
+
+        let borderColor = UIColor.gray.cgColor
+
+        updateQuoteLabel.layer.borderColor = borderColor
+        moreAboutButton.layer.borderColor = borderColor
 
         quoteModel.setView(view: self)
     }
@@ -42,6 +48,7 @@ class QuoteViewController: UIViewController {
 
     func noConnection() {
         moreAboutButton.isEnabled = false
+        moreAboutButton.setTitleColor(UIColor.gray, for: .normal)
 
         let action = UIAlertAction(title: "Ok",
                                    style: .default,
@@ -59,6 +66,7 @@ class QuoteViewController: UIViewController {
             noConnection()
         } else {
             moreAboutButton.isEnabled = true
+            moreAboutButton.setTitleColor(UIColor.white, for: .normal)
             quoteModel.updateQuote()
         }
     }

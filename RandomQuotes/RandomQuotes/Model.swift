@@ -16,7 +16,7 @@ class Model: NSObject {
 
     override init() {
         let quoteText = "If you don't have internet, you can't get new quotes"
-        let author = "From this app developer"
+        let author = "Developer"
 
         quote = Quote(quote: quoteText, author: author)
     }
