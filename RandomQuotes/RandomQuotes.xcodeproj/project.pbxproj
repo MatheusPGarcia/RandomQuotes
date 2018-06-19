@@ -12,12 +12,42 @@
 		AE59E39020D40DB40041E002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE59E38E20D40DB40041E002 /* Main.storyboard */; };
 		AE59E39220D40DB70041E002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE59E39120D40DB70041E002 /* Assets.xcassets */; };
 		AE59E39520D40DB70041E002 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE59E39320D40DB70041E002 /* LaunchScreen.storyboard */; };
+		AE88787520D82274001E6A24 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE88787420D82274001E6A24 /* Property List.plist */; };
+		AEDF4B1B20D8566200EE1C08 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDF4B1A20D8566200EE1C08 /* NotificationCenter.framework */; };
+		AEDF4B1E20D8566200EE1C08 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4B1D20D8566200EE1C08 /* TodayViewController.swift */; };
+		AEDF4B2120D8566200EE1C08 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDF4B1F20D8566200EE1C08 /* MainInterface.storyboard */; };
+		AEDF4B2520D8566200EE1C08 /* RandomQuotes Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEDF4B1920D8566200EE1C08 /* RandomQuotes Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AEDF4B2B20D85D3B00EE1C08 /* UserDefaultsHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4B2A20D85D3B00EE1C08 /* UserDefaultsHandle.swift */; };
 		AEF3343F20D43199008A081D /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3343E20D43199008A081D /* Quote.swift */; };
 		AEF3344120D43225008A081D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344020D43225008A081D /* Model.swift */; };
 		AEF3344320D453C4008A081D /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344220D453C4008A081D /* QuoteService.swift */; };
 		AEF3344520D45EF3008A081D /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344420D45EF3008A081D /* QuoteViewController.swift */; };
 		AEF3344920D4953B008A081D /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3344820D4953B008A081D /* InternetConnection.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEDF4B2320D8566200EE1C08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE59E37F20D40DB40041E002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEDF4B1820D8566200EE1C08;
+			remoteInfo = "RandomQuotes Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEDF4B2920D8566200EE1C08 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AEDF4B2520D8566200EE1C08 /* RandomQuotes Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7BD8DB612EF85E3FF91CC144 /* Pods-RandomQuotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomQuotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomQuotes/Pods-RandomQuotes.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +58,14 @@
 		AE59E39420D40DB70041E002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE59E39620D40DB70041E002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6341EB81A30C51F383088A /* Pods-RandomQuotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomQuotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomQuotes/Pods-RandomQuotes.debug.xcconfig"; sourceTree = "<group>"; };
+		AE7E827620D7FC2200147930 /* RandomQuotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RandomQuotes.entitlements; sourceTree = "<group>"; };
+		AE88787420D82274001E6A24 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		AEDF4B1920D8566200EE1C08 /* RandomQuotes Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RandomQuotes Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDF4B1A20D8566200EE1C08 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		AEDF4B1D20D8566200EE1C08 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		AEDF4B2020D8566200EE1C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AEDF4B2220D8566200EE1C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDF4B2A20D85D3B00EE1C08 /* UserDefaultsHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHandle.swift; sourceTree = "<group>"; };
 		AEF3343E20D43199008A081D /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		AEF3344020D43225008A081D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AEF3344220D453C4008A081D /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
@@ -45,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEDF4B1620D8566200EE1C08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDF4B1B20D8566200EE1C08 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8F00E3225BA386E79F6B5F /* Pods_RandomQuotes.framework */,
+				AEDF4B1A20D8566200EE1C08 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				AE59E38920D40DB40041E002 /* RandomQuotes */,
+				AEDF4B1C20D8566200EE1C08 /* RandomQuotes Widget */,
 				AE59E38820D40DB40041E002 /* Products */,
 				852F673F1B9EC9F3FCD33B09 /* Pods */,
 				594B1600AE149FFF69546740 /* Frameworks */,
@@ -79,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				AE59E38720D40DB40041E002 /* RandomQuotes.app */,
+				AEDF4B1920D8566200EE1C08 /* RandomQuotes Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,18 +135,31 @@
 		AE59E38920D40DB40041E002 /* RandomQuotes */ = {
 			isa = PBXGroup;
 			children = (
+				AE7E827620D7FC2200147930 /* RandomQuotes.entitlements */,
 				AE59E38A20D40DB40041E002 /* AppDelegate.swift */,
 				AEF3343E20D43199008A081D /* Quote.swift */,
 				AEF3344420D45EF3008A081D /* QuoteViewController.swift */,
 				AEF3344020D43225008A081D /* Model.swift */,
+				AEDF4B2A20D85D3B00EE1C08 /* UserDefaultsHandle.swift */,
 				AEF3344220D453C4008A081D /* QuoteService.swift */,
 				AEF3344820D4953B008A081D /* InternetConnection.swift */,
 				AE59E38E20D40DB40041E002 /* Main.storyboard */,
 				AE59E39120D40DB70041E002 /* Assets.xcassets */,
 				AE59E39320D40DB70041E002 /* LaunchScreen.storyboard */,
 				AE59E39620D40DB70041E002 /* Info.plist */,
+				AE88787420D82274001E6A24 /* Property List.plist */,
 			);
 			path = RandomQuotes;
+			sourceTree = "<group>";
+		};
+		AEDF4B1C20D8566200EE1C08 /* RandomQuotes Widget */ = {
+			isa = PBXGroup;
+			children = (
+				AEDF4B1D20D8566200EE1C08 /* TodayViewController.swift */,
+				AEDF4B1F20D8566200EE1C08 /* MainInterface.storyboard */,
+				AEDF4B2220D8566200EE1C08 /* Info.plist */,
+			);
+			path = "RandomQuotes Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,15 +175,34 @@
 				AE59E38520D40DB40041E002 /* Resources */,
 				24882CC674BB6F13185BF7C7 /* [CP] Embed Pods Frameworks */,
 				AE59E39C20D40EEC0041E002 /* ShellScript */,
+				AEDF4B2920D8566200EE1C08 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AEDF4B2420D8566200EE1C08 /* PBXTargetDependency */,
 			);
 			name = RandomQuotes;
 			productName = RandomQuotes;
 			productReference = AE59E38720D40DB40041E002 /* RandomQuotes.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AEDF4B1820D8566200EE1C08 /* RandomQuotes Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDF4B2620D8566200EE1C08 /* Build configuration list for PBXNativeTarget "RandomQuotes Widget" */;
+			buildPhases = (
+				AEDF4B1520D8566200EE1C08 /* Sources */,
+				AEDF4B1620D8566200EE1C08 /* Frameworks */,
+				AEDF4B1720D8566200EE1C08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RandomQuotes Widget";
+			productName = "RandomQuotes Widget";
+			productReference = AEDF4B1920D8566200EE1C08 /* RandomQuotes Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -134,6 +215,14 @@
 				ORGANIZATIONNAME = "Matheus Garcia";
 				TargetAttributes = {
 					AE59E38620D40DB40041E002 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					AEDF4B1820D8566200EE1C08 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -152,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				AE59E38620D40DB40041E002 /* RandomQuotes */,
+				AEDF4B1820D8566200EE1C08 /* RandomQuotes Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -163,7 +253,16 @@
 			files = (
 				AE59E39520D40DB70041E002 /* LaunchScreen.storyboard in Resources */,
 				AE59E39220D40DB70041E002 /* Assets.xcassets in Resources */,
+				AE88787520D82274001E6A24 /* Property List.plist in Resources */,
 				AE59E39020D40DB40041E002 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDF4B1720D8566200EE1C08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDF4B2120D8566200EE1C08 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +330,28 @@
 				AEF3344320D453C4008A081D /* QuoteService.swift in Sources */,
 				AEF3344520D45EF3008A081D /* QuoteViewController.swift in Sources */,
 				AE59E38B20D40DB40041E002 /* AppDelegate.swift in Sources */,
+				AEDF4B2B20D85D3B00EE1C08 /* UserDefaultsHandle.swift in Sources */,
 				AEF3344120D43225008A081D /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEDF4B1520D8566200EE1C08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDF4B1E20D8566200EE1C08 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEDF4B2420D8566200EE1C08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEDF4B1820D8566200EE1C08 /* RandomQuotes Widget */;
+			targetProxy = AEDF4B2320D8566200EE1C08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AE59E38E20D40DB40041E002 /* Main.storyboard */ = {
@@ -252,6 +368,14 @@
 				AE59E39420D40DB70041E002 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AEDF4B1F20D8566200EE1C08 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEDF4B2020D8566200EE1C08 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -375,7 +499,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE6341EB81A30C51F383088A /* Pods-RandomQuotes.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RandomQuotes/RandomQuotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W69VTQXGX;
 				INFOPLIST_FILE = RandomQuotes/Info.plist;
@@ -394,7 +520,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BD8DB612EF85E3FF91CC144 /* Pods-RandomQuotes.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RandomQuotes/RandomQuotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W69VTQXGX;
 				INFOPLIST_FILE = RandomQuotes/Info.plist;
@@ -404,6 +532,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.org.RandomQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEDF4B2720D8566200EE1C08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W69VTQXGX;
+				INFOPLIST_FILE = "RandomQuotes Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.org.eldorado.org.RandomQuotes.RandomQuotes-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEDF4B2820D8566200EE1C08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W69VTQXGX;
+				INFOPLIST_FILE = "RandomQuotes Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.org.eldorado.org.RandomQuotes.RandomQuotes-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +592,15 @@
 			buildConfigurations = (
 				AE59E39A20D40DB70041E002 /* Debug */,
 				AE59E39B20D40DB70041E002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDF4B2620D8566200EE1C08 /* Build configuration list for PBXNativeTarget "RandomQuotes Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDF4B2720D8566200EE1C08 /* Debug */,
+				AEDF4B2820D8566200EE1C08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,17 +8,17 @@
 
 import Foundation
 
-struct Quote {
-    let text: String
+struct Quote: Codable {
+    let quote: String
     let author: String
 
     init(quote: String, author: String) {
-        self.text = "If you don't have internet, you can't get new quotes"
+        self.quote = "If you don't have internet, you can't get new quotes"
         self.author = "From this app developer"
     }
 }
 
-extension Quote: Decodable {
+extension Quote {
     enum StructKeys: String, CodingKey {
         case quote
         case author
@@ -30,7 +30,7 @@ extension Quote: Decodable {
         let quote: String = try container.decode(String.self, forKey: .quote)
         let author: String = try container.decode(String.self, forKey: .author)
 
-        self.text = quote
+        self.quote = quote
         self.author = author
     }
 }

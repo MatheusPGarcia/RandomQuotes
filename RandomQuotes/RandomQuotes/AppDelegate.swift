@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // swiftlint:disable all
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        application.statusBarStyle = .lightContent
         // Override point for customization after application launch.
         return true
     }

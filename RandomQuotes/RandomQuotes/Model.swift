@@ -43,7 +43,25 @@ class Model: NSObject {
         if let view = view {
             view.updateLabels()
         }
+
+        let defaults = UserDefaultsHandle()
+        defaults.setDefaultQuote(quote: quote)
+
         return
+    }
+
+    func adjustLabels() {
+
+        let defaults = UserDefaultsHandle()
+
+        if !defaults.firstTime() {
+
+            defaults.generateForTheFirstTime()
+            return
+        }
+        guard let quoteDefault = defaults.getDefaultQuote() else { return }
+        quote = quoteDefault
+        quoteHasChanged()
     }
 
     func setView(view: QuoteViewController) {

@@ -30,13 +30,14 @@ class QuoteViewController: UIViewController {
         moreAboutButton.layer.borderColor = borderColor
 
         quoteModel.setView(view: self)
+        quoteModel.adjustLabels()
     }
 
     func updateLabels() {
 
         let currentQuote = quoteModel.quote
 
-        let quoteText = "\"\(currentQuote.text)\""
+        let quoteText = "\"\(currentQuote.quote)\""
         let authorText = "- \(currentQuote.author)"
         let moreAboutText = "More about \(currentQuote.author)"
 
