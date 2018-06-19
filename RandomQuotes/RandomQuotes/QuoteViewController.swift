@@ -84,7 +84,12 @@ class QuoteViewController: UIViewController {
 
     func stopActivity() {
         activityIndicator.stopAnimating()
-        UIApplication.shared.endIgnoringInteractionEvents()
+
+        let ignoringStatus = UIApplication.shared.isIgnoringInteractionEvents
+
+        if ignoringStatus {
+            UIApplication.shared.endIgnoringInteractionEvents()
+        }
 
         bluredView.isHidden = true
     }
