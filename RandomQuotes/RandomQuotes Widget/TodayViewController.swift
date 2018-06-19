@@ -17,7 +17,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if firstTime() {
+        if !firstTime() {
             quoteTextLabel.text = "\"It was a pleasure to develop this app\""
             authorTextLabel.text = "-Developer"
         } else {
@@ -25,6 +25,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             quoteTextLabel.text = "\"\(quote.quote)\""
             authorTextLabel.text = "- \(quote.author)"
         }
+
+        widgetPerformUpdate { (_) in }
     }
 
     override func didReceiveMemoryWarning() {

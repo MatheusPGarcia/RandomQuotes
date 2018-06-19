@@ -12,10 +12,13 @@ class QuoteViewController: UIViewController {
 
     var quoteModel = Model()
 
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var moreAboutButton: UIButton!
     @IBOutlet weak var updateQuoteLabel: UIButton!
+    @IBOutlet weak var bluredView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,8 @@ class QuoteViewController: UIViewController {
 
         quoteModel.setView(view: self)
         quoteModel.adjustLabels()
+
+        bluredView.isHidden = true
     }
 
     func updateLabels() {
@@ -45,6 +50,8 @@ class QuoteViewController: UIViewController {
         authorLabel.text = authorText
         moreAboutButton.setTitle(moreAboutText, for: .normal)
         self.view.layoutIfNeeded()
+
+        stopActivity()
     }
 
     func noConnection() {
@@ -59,9 +66,32 @@ class QuoteViewController: UIViewController {
                                       preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
+
+        stopActivity()
+    }
+
+    func startActivity() {
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
+        view.addSubview(activityIndicator)
+
+        activityIndicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
+
+        bluredView.isHidden = false
+    }
+
+    func stopActivity() {
+        activityIndicator.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+
+        bluredView.isHidden = true
     }
 
     @IBAction func updateQuoteWasPressed(_ sender: UIButton) {
+
+        startActivity()
 
         if !(quoteModel.checkInternetConnection()) {
             noConnection()

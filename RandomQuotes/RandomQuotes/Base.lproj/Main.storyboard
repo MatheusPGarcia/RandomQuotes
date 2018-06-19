@@ -73,29 +73,38 @@
                                     <action selector="moreAboutWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUe-ae-zFN"/>
                                 </connections>
                             </button>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HT1-Tf-fdL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="eVK-hV-3cF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="05i-BG-Wyw"/>
                             <constraint firstItem="ozc-be-rzd" firstAttribute="top" secondItem="yTC-ah-NpK" secondAttribute="bottom" constant="15" id="188-0l-ZNT"/>
                             <constraint firstItem="yTC-ah-NpK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="20M-4v-xTE"/>
+                            <constraint firstItem="HT1-Tf-fdL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="69h-MA-sdW"/>
                             <constraint firstItem="yTC-ah-NpK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7L5-9c-a43"/>
                             <constraint firstItem="ozc-be-rzd" firstAttribute="leading" secondItem="yTC-ah-NpK" secondAttribute="leading" id="As1-Ml-LAx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yTC-ah-NpK" secondAttribute="trailing" constant="20" id="D3K-M4-ZHB"/>
                             <constraint firstItem="Bzr-YR-3CD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HI4-4C-o7T"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eVK-hV-3cF" secondAttribute="trailing" constant="20" id="J2b-6V-m8q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HT1-Tf-fdL" secondAttribute="trailing" id="VC5-fG-ALa"/>
                             <constraint firstItem="Bzr-YR-3CD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.45" id="cvj-df-9ja"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ozc-be-rzd" secondAttribute="trailing" constant="20" symbolic="YES" id="dHL-aP-J1U"/>
                             <constraint firstItem="yTC-ah-NpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dKw-Yz-3sK"/>
                             <constraint firstItem="eVK-hV-3cF" firstAttribute="top" secondItem="Bzr-YR-3CD" secondAttribute="bottom" constant="30" id="dSW-8d-UXG"/>
                             <constraint firstItem="eVK-hV-3cF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePb-5T-vxu"/>
+                            <constraint firstItem="HT1-Tf-fdL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fgh-1T-qPM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bzr-YR-3CD" secondAttribute="trailing" constant="20" id="glF-4y-Vms"/>
                             <constraint firstItem="Bzr-YR-3CD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pj4-TZ-5Mo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HT1-Tf-fdL" secondAttribute="bottom" id="ubs-fL-ZEl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="ozc-be-rzd" id="hZM-TB-dLY"/>
+                        <outlet property="bluredView" destination="HT1-Tf-fdL" id="b5m-Qc-LNL"/>
                         <outlet property="moreAboutButton" destination="eVK-hV-3cF" id="KCe-dm-BAr"/>
                         <outlet property="quoteLabel" destination="yTC-ah-NpK" id="dK3-e9-MSy"/>
                         <outlet property="updateQuoteLabel" destination="Bzr-YR-3CD" id="AT7-pi-no7"/>
