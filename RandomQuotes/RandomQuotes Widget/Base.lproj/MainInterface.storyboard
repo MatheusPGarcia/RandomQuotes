@@ -30,13 +30,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-vk-1pf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+                                <connections>
+                                    <action selector="openApplication:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="eQb-BQ-TUn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="B6I-gd-MmG" secondAttribute="trailing" constant="10" id="0NS-jh-9RM"/>
                             <constraint firstItem="jWd-rs-C85" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="B6I-gd-MmG" secondAttribute="trailing" id="3MH-pG-Tlj"/>
                             <constraint firstItem="jWd-rs-C85" firstAttribute="leading" secondItem="B6I-gd-MmG" secondAttribute="leading" id="6Nd-Nw-Qni"/>
                             <constraint firstItem="jWd-rs-C85" firstAttribute="top" secondItem="B6I-gd-MmG" secondAttribute="bottom" constant="5" id="9KS-2Q-nqj"/>
+                            <constraint firstItem="BPm-vk-1pf" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="GA2-pa-WYv"/>
+                            <constraint firstAttribute="bottom" secondItem="BPm-vk-1pf" secondAttribute="bottom" id="QpU-vU-Dbt"/>
                             <constraint firstItem="B6I-gd-MmG" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="5" id="SBd-Hh-PHK"/>
+                            <constraint firstItem="BPm-vk-1pf" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="ai6-ao-564"/>
+                            <constraint firstItem="BPm-vk-1pf" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="bm9-tK-HXH"/>
                             <constraint firstItem="B6I-gd-MmG" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="10" id="yeX-y1-s4e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
@@ -51,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="71.964017991004496"/>
+            <point key="canvasLocation" x="32" y="71.064467766116948"/>
         </scene>
     </scenes>
 </document>

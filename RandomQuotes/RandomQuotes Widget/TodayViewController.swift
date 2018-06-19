@@ -70,4 +70,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
         return nil
     }
+
+    @IBAction func openApplication(_ sender: UIButton) {
+
+        guard let url: NSURL = NSURL(string: "RandomQuotes://") else { return }
+
+        self.extensionContext?.open(url as URL, completionHandler: nil)
+    }
 }
