@@ -139,20 +139,60 @@
 			isa = PBXGroup;
 			children = (
 				AE7E827620D7FC2200147930 /* RandomQuotes.entitlements */,
-				AE59E38A20D40DB40041E002 /* AppDelegate.swift */,
-				AEF3343E20D43199008A081D /* Quote.swift */,
-				AEF3344420D45EF3008A081D /* QuoteViewController.swift */,
-				AEF3344020D43225008A081D /* Model.swift */,
-				AEDF4B2A20D85D3B00EE1C08 /* UserDefaultsHandle.swift */,
-				AEF3344220D453C4008A081D /* QuoteService.swift */,
-				AEF3344820D4953B008A081D /* InternetConnection.swift */,
-				AE59E38E20D40DB40041E002 /* Main.storyboard */,
+				AE7C8CC520D9BCAB00A633D1 /* SupportingFiles */,
+				AE7C8CC620D9BCC600A633D1 /* Service */,
+				AE7C8CC720D9BCD700A633D1 /* Model */,
+				AE7C8CC820D9BCE900A633D1 /* View */,
+				AE7C8CC920D9BCF700A633D1 /* Controller */,
 				AE59E39120D40DB70041E002 /* Assets.xcassets */,
-				AE59E39320D40DB70041E002 /* LaunchScreen.storyboard */,
 				AE59E39620D40DB70041E002 /* Info.plist */,
 				AE88787420D82274001E6A24 /* Property List.plist */,
 			);
 			path = RandomQuotes;
+			sourceTree = "<group>";
+		};
+		AE7C8CC520D9BCAB00A633D1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3344820D4953B008A081D /* InternetConnection.swift */,
+				AE59E38A20D40DB40041E002 /* AppDelegate.swift */,
+				AEF3343E20D43199008A081D /* Quote.swift */,
+				AEDF4B2A20D85D3B00EE1C08 /* UserDefaultsHandle.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AE7C8CC620D9BCC600A633D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3344220D453C4008A081D /* QuoteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AE7C8CC720D9BCD700A633D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3344020D43225008A081D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE7C8CC820D9BCE900A633D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE59E38E20D40DB40041E002 /* Main.storyboard */,
+				AE59E39320D40DB70041E002 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE7C8CC920D9BCF700A633D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3344420D45EF3008A081D /* QuoteViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		AEDF4B1C20D8566200EE1C08 /* RandomQuotes Widget */ = {
