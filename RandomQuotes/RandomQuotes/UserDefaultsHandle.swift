@@ -23,6 +23,11 @@ class UserDefaultsHandle: NSObject {
         let key = "launchedBefore"
 
         UserDefaults.standard.set(true, forKey: key)
+
+        let groupName = "group.matheuspgarcia.randomQuotes"
+        guard let groupDefaults = UserDefaults(suiteName: groupName) else { return }
+        groupDefaults.set(true, forKey: key)
+        groupDefaults.synchronize()
     }
 
     func getDefaultQuote() -> Quote? {
@@ -54,6 +59,12 @@ class UserDefaultsHandle: NSObject {
             let key = "quotesKey"
 
             defaults.set(encoded, forKey: key)
+            defaults.synchronize()
+
+            let groupName = "group.matheuspgarcia.randomQuotes"
+            guard let groupDefaults = UserDefaults(suiteName: groupName) else { return }
+            groupDefaults.set(encoded, forKey: key)
+            groupDefaults.synchronize()
         }
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ADE2CCA5C60D277EE4F2D0F7 /* Pods_RandomQuotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8F00E3225BA386E79F6B5F /* Pods_RandomQuotes.framework */; };
+		AE4C4B7520D92466003AF2DB /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF3343E20D43199008A081D /* Quote.swift */; };
+		AE4C4B9E20D92D44003AF2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE59E39120D40DB70041E002 /* Assets.xcassets */; };
 		AE59E38B20D40DB40041E002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59E38A20D40DB40041E002 /* AppDelegate.swift */; };
 		AE59E39020D40DB40041E002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE59E38E20D40DB40041E002 /* Main.storyboard */; };
 		AE59E39220D40DB70041E002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE59E39120D40DB70041E002 /* Assets.xcassets */; };
@@ -51,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		7BD8DB612EF85E3FF91CC144 /* Pods-RandomQuotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomQuotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomQuotes/Pods-RandomQuotes.release.xcconfig"; sourceTree = "<group>"; };
+		AE4C4B7620D9267D003AF2DB /* RandomQuotes Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RandomQuotes Widget.entitlements"; sourceTree = "<group>"; };
 		AE59E38720D40DB40041E002 /* RandomQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE59E38A20D40DB40041E002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE59E38F20D40DB40041E002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 		AEDF4B1C20D8566200EE1C08 /* RandomQuotes Widget */ = {
 			isa = PBXGroup;
 			children = (
+				AE4C4B7620D9267D003AF2DB /* RandomQuotes Widget.entitlements */,
 				AEDF4B1D20D8566200EE1C08 /* TodayViewController.swift */,
 				AEDF4B1F20D8566200EE1C08 /* MainInterface.storyboard */,
 				AEDF4B2220D8566200EE1C08 /* Info.plist */,
@@ -217,13 +221,21 @@
 					AE59E38620D40DB40041E002 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
-							com.apple.Siri = {
+							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
 							};
 						};
 					};
 					AEDF4B1820D8566200EE1C08 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -262,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4C4B9E20D92D44003AF2DB /* Assets.xcassets in Resources */,
 				AEDF4B2120D8566200EE1C08 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4C4B7520D92466003AF2DB /* Quote.swift in Sources */,
 				AEDF4B1E20D8566200EE1C08 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +554,7 @@
 		AEDF4B2720D8566200EE1C08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RandomQuotes Widget/RandomQuotes Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W69VTQXGX;
 				INFOPLIST_FILE = "RandomQuotes Widget/Info.plist";
@@ -559,6 +574,7 @@
 		AEDF4B2820D8566200EE1C08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RandomQuotes Widget/RandomQuotes Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W69VTQXGX;
 				INFOPLIST_FILE = "RandomQuotes Widget/Info.plist";
