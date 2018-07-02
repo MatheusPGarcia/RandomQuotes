@@ -126,4 +126,16 @@ class QuoteViewController: UIViewController {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
+
+    @IBAction func shareButtonWasPressed(_ sender: UIButton) {
+
+        let quote = quoteModel.quote
+        let shareText = "\"\(quote.quote)\"\n- \(quote.author)"
+
+        let activityVC = UIActivityViewController(activityItems: [shareText],
+                                                  applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+
+        self.present(activityVC, animated: true, completion: nil)
+    }
 }
