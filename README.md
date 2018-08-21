@@ -9,3 +9,8 @@ Thanks for the visit, see you!
 
 "The cake is a Lie"
 -Universal truth 
+
+## The App
+![00](https://user-images.githubusercontent.com/26767904/44416986-cf5de400-a54a-11e8-9888-ababd3e5c26b.png)
+![01](https://user-images.githubusercontent.com/26767904/44416987-cf5de400-a54a-11e8-9666-cfd4fa3155f7.png)
+![02](https://user-images.githubusercontent.com/26767904/44416988-cff67a80-a54a-11e8-8184-9ab7a936423c.png)
