@@ -19,9 +19,6 @@ the app was developed for iOS.
 ![02](https://user-images.githubusercontent.com/26767904/44416988-cff67a80-a54a-11e8-8184-9ab7a936423c.png)
 
 
-![e](https://user-images.githubusercontent.com/26767904/44417342-95d9a880-a54b-11e8-8c58-8d23d79c66ad.png)
-
-
 ## Developed by
  - Matheus Pompeo Garcia (iOS Developer)
  - Github: MatheusPGarcia
@@ -31,3 +28,6 @@ the app was developed for iOS.
 
 "The cake is a Lie"
 -Universal truth 
+
+
+![e](https://user-images.githubusercontent.com/26767904/44417342-95d9a880-a54b-11e8-8c58-8d23d79c66ad.png)
